@@ -70,7 +70,7 @@ export class LinkedList<T> {
         let rv: DS.Node<T> | null = null;
 
         while (current.next && current.next.item !== item) {
-            current = current?.next;
+            current = current.next;
         }
 
         if (current.next) {
