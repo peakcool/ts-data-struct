@@ -12,6 +12,13 @@
  import ListNode from '../ListNode';
  import { data1, data2 } from '../ListNode';
 
+  /** 
+  * @Author: TangLiangcheng 
+  * @Date: 2021-04-18 10:27:53 
+  * @Desc: 快慢指针
+  * 时间复杂度：O(n)
+  * 空间复杂度：O(1) 
+  */
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
 	let dummyHead: ListNode = new ListNode(0, head);
     let p: ListNode | null = dummyHead;

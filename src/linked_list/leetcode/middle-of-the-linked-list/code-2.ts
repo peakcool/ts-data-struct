@@ -12,7 +12,13 @@
 import ListNode from '../ListNode';
 import { data1, data2 } from '../ListNode';
 
-// 快慢指针, q + 1, p + 2
+/** 
+  * @Author: TangLiangcheng 
+  * @Date: 2021-04-18 10:27:53 
+  * @Desc: 快慢指针, q + 1, p + 2
+  * 时间复杂度：O(n)
+  * 空间复杂度：O(1) 
+  */
 function middleNode(head: ListNode | null): ListNode | null {
 	let p: ListNode | null = head;
 	let q: ListNode | null = head;

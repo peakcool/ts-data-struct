@@ -13,6 +13,13 @@
  import ListNode from '../ListNode';
  import { data1, data2 } from '../ListNode';
 
+ /** 
+  * @Author: TangLiangcheng 
+  * @Date: 2021-04-18 10:27:53 
+  * @Desc: 暴力解法
+  * 时间复杂度：O(n)
+  * 空间复杂度：O(1) 
+  */
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
 	// 处理特殊情况
 	if (head === null || (head.next === null && n === 1)) {
