@@ -29,9 +29,6 @@ export class Stack<T> {
      * @Desc: 入栈 
      */
     public push(newItem: T): void {
-        if (!newItem) {
-            throw 'item is required'
-        }
         if (this.isFull()) {
             throw 'stack is full'
         }
@@ -58,7 +55,7 @@ export class Stack<T> {
         return this.stack[this.length - 1];
     }
 
-    public stackContents(): void {
-
+    public getLength(): number {
+        return this.length;
     }    
 }
